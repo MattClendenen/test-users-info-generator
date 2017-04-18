@@ -75,7 +75,7 @@ def generate(numFirst, numLast, listOpenFiles, lastFile, tempFile, which_file, d
         first = which_file(listOpenFiles).readline().split(' ')[0]
         for j in range(0, int(numLast)):
             last = lastFile.readline().split(' ')[0]
-            tempFile.write(first + delimiter + last + "\n")
+            tempFile.write(first + delimiter + last + delimiter + last + "." + first + "@TESTUSER.COM" + "\n")
         lastFile.seek(0)
 
 def random_file(thisList):

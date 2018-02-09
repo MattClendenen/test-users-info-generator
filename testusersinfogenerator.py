@@ -12,7 +12,7 @@ from argparse import *
 
 # define main
 def main():
-
+    print("2018!!!")
     # buld command line argument parser
     parser = build_parser()
     # parse command line arguments
